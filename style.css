@@ -3,14 +3,18 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-
+  /* font-family: "Ms Madi", cursive; */
+  font-family: "Nunito", sans-serif;
   color: black;
 }
-nav#navbar {
-  position: fixed;
-  width: 100%;
-  position: sticky;
-  top: 0;
+.blink-hard {
+  animation: pulse 4s infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0;
+  }
 }
 li.nav-link {
   display: inline-block;
@@ -45,7 +49,7 @@ meter {
   background-size: cover;
   background-position: center;
   min-height: 100vh;
-  font-family: "Times New Roman", Times, serif;
+  /* font-family: "Times New Roman", Times, serif; */
 }
 section#landing {
   display: flex;
@@ -53,11 +57,13 @@ section#landing {
   justify-content: center;
   align-items: center;
 }
-#header {
-  position: sticky;
+#navbar {
+  position: fixed !important ;
   top: 0;
   height: 50px;
-  background-color: #8b8b8b;
+  /* background: transparent;
+  opacity: 0.5; */
+  width: 100%;
 }
 p {
   display: flex;
@@ -185,28 +191,32 @@ input[type="submit"]:hover {
 }
 
 #Projects {
-  height: 80vh;
+  /* height: 100vh; */
   background-color: #8b8b8b;
 }
 .float-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
   border: 3px solid transparent;
   padding: 20px;
 }
 .float-child1 {
   height: 400px;
-  width: 40%;
-  float: left;
+  width: 400px;
+
   padding: 30px;
   border: 2px solid red;
   border-radius: 0px;
   background: #e0e0e0;
   box-shadow: 25px 25px 49px #8b8b8b, -25px -25px 49px #ffffff;
-  align-items: center;
+  /* align-items: center; */
 }
 .float-child2 {
   height: 400px;
-  width: 40%;
-  float: right;
+  width: 400px;
+
   padding: 30px;
   border: 2px solid red;
   border-radius: 0px;
@@ -264,7 +274,7 @@ input[type="submit"]:hover {
   background: grey;
 }
 #Testimonials {
-  min-height: 65vh;
+  /* min-height: 65vh; */
   background-color: #65a4b8;
 }
 
@@ -273,9 +283,12 @@ input[type="submit"]:hover {
   justify-content: center;
 }
 .image1 {
+  display: flex;
+  justify-content: center;
   width: 300px;
-  height: 350px;
+  height: 300px;
   border-radius: 50%;
+  object-fit: cover;
 }
 .row {
   display: flex;
@@ -287,8 +300,36 @@ input[type="submit"]:hover {
 } */
 .fa-solid,
 .fas {
-  font-family: "Font Awesome 6 Free";
+  /* font-family: "Font Awesome 6 Free"; */
   font-weight: 900;
   width: 37px;
   color: black;
+}
+
+.contact_icons {
+  display: flex;
+  justify-content: center;
+}
+i {
+  font-size: 25px;
+}
+
+i:hover {
+  color: white;
+}
+
+.container_testimonial {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.testimonial_card p {
+  width: 400px;
+  text-align: center;
+}
+
+.link {
+  font-weight: bolder;
 }
