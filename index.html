@@ -21,7 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zoe van Der Schyff</title>
   </head>
-  <body class="bg-light">
+  <body class="bg-dark">
     <nav id="navbar">
 <nav class="navbar navbar-expand-lg navbar-light bg-seconadary " >
   <div class="container">
@@ -57,7 +57,7 @@
       </h1>
     </section>
     <!-- START OF ABOUT -->
-<section id="About" class="container bg-white shadow-sm mt-3 p-5">
+<section id="About" class="container bg-seconadary shadow-sm mt-3 p-5">
       <div class="row">
         <div class="col-md-6">
           <div class="container-fluid">
@@ -65,8 +65,8 @@
               <div class="col">
                 <img
                   class="rounded img-fluid"
-                  src="./agency.jpg"
-                  alt="Agency"
+                  src="./Zoe (3).JPG"
+                  alt="Zoe Van Der Schyff"
                 />
               </div>
               <div class="col">
@@ -181,7 +181,7 @@
     <!-- END OF ABOUT -->
     
 <!-- START OF RESUME -->
-    <section id="Resume">
+    <section id="Resume" class="container bg-primary shadow-sm mt-3 p-5">
       <h1 class="head">Resume</h1>
       <h2 class="head2">Education</h2>
       <div class="card">
@@ -203,10 +203,10 @@
       <div class="card">
         <div class="info">
           <h4 class="date" style="font-size: 13px; font-weight: bold">
-            <i class="fas fa-graduation-cap"></i> 2022-Present:
+            <i class="fas fa-graduation-cap"></i> 2021
           </h4>
           <h3 class="title" style="font-weight: bold; color: black">
-            lorem aslprd sndhue
+            Matric Student
           </h3>
           <p style="font-weight: 500">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quo
@@ -219,16 +219,16 @@
     </section>
     <!-- END OF RESUME -->
 <!-- START OF PROJECTS -->
-<section id="Projects">
+<section id="Projects" class="container bg-secondary shadow-sm mt-3 p-5">
       <div class="container">
         <h2 class="pro-head">Projects</h2>
         <table class="table">
   <thead>
     <tr>
       <th scope="col"></th>
-      <th scope="col">1st Project</th>
+      <th scope="col">1st projects</th>
       <th scope="col"></th>
-      <th scope="col">2nd Project</th>
+      <th scope="col">Holiday Destination</th>
     </tr>
   </thead>
   <tbody>
@@ -292,7 +292,7 @@
     </section> --> 
     <!-- END OF PROJECTS -->
     <!-- START OF TESTIMONIALS -->
-    <section id="Testimonials" class="py-5">
+    <section id="Testimonials" class="container bg-primary shadow-sm mt-3 p-5" >
       <h2 class="mb-5 text-center">Testimonials</h2>
       <div class="container text-center text-white">
     <div id="testimonialSlider" class="carousel slide" data-bs-ride="carousel">
@@ -393,13 +393,11 @@
     <!-- END OF TESTIMONIALS -->
 
 <!-- START OF CONTACT -->
-<section id="Contact">
-    <h1>Contact me</h1>
-     <h2 class="text-center">Contact me for more information</h2>
-    
-    <br />
+<section id="Contact" class="container bg-seconadary shadow-sm mt-3 p-5">
     <div class="container">
-  <form
+       <h1>Contact me</h1>
+     <h2 class="text-center">Contact me for more information</h2>
+    <form
   action="https://formspree.io/f/xdobplbk"
   method="POST"
   >
@@ -440,7 +438,7 @@
       <label for="subject"><strong>Message</strong></label>
     </div>
     <div class="col-75">
-      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
     </div>
   </div>
   <br>
@@ -453,7 +451,7 @@
 
    
      <!-- Modal -->
-    <div
+    <!-- <div
       class="modal fade"
       id="exampleModal"
       tabindex="-1"
@@ -507,8 +505,29 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     </section>
+    <section id="footer" >
+      <div class="container-fluid">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border top">
+         <p class="col-md-4 mb-0 text-muted">© 2022 Company, Inc . Done by Zoe' Van Der Schyff.</p>
+         
+           <a href="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+         <p class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-auto link-dark text-decoration-none"></p>
+         <i class="fa-brands fa-bootstrap"></i>
+          </a> 
+          <ul class="nav col-md-4 justify-content-end">
+             <li class="nav-link"><a href="#landing">Home</a></li>
+              <li class="nav-link"><a href="#About">About</a></li>
+               <li class="nav-link"><a href="#Resume">Resume</a></li>
+                 <li class="nav-link"><a href="#Projects">Projects</a></li>
+                  <li class="nav-link"><a href="#Testimonials">Testimonials</a></li>
+                        <li class="nav-link"><a href="#Contact">Contact</a></li>
+          </ul>
+        </footer>
+      </div>
+    </section>
+    <script src="https://kit.fontawesome.com/bccdf4f91d.js" crossorigin="anonymous"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
