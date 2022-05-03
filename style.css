@@ -203,11 +203,27 @@ input[type="submit"]:hover {
   min-height: 100vh;
   background-color: #65a4b8;
 }
-
+.pro-head {
+  text-align: center;
+}
 #Projects {
-  /* height: 100vh; */
+  height: 100vh;
+
   background-color: #8b8b8b;
 }
+/* .project-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.project-container img {
+  min-width: 200px;
+  flex-grow: 1;
+  object-fit: cover;
+  max-height: 400px;
+} */
 .float-container {
   display: flex;
   justify-content: center;
